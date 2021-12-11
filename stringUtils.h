@@ -11,7 +11,7 @@ using namespace std;
 class stringUtils {
 public:
 	static string lowercase(string str);
-	static string endLines(int count);
+	static string emptyLines(int count);
 };
 
 
