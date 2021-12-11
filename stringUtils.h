@@ -11,6 +11,7 @@ using namespace std;
 class stringUtils {
 public:
 	static string lowercase(string str);
+	static string endlines(int count);
 };
 
 
