@@ -10,6 +10,8 @@ class emoji {
 public:
 	static std::string heart;
 	static std::string copyright;
+	static std::string robot;
+	static std::string sosSignal;
 };
 
 
