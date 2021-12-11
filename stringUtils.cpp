@@ -11,7 +11,7 @@ string stringUtils::lowercase(string str) {
 	return str;
 }
 
-string stringUtils::endlines(int count) {
+string stringUtils::endLines(int count) {
 	string lines = "";
 	for(int i=0; i<count; i++)
 		lines += "\n";
