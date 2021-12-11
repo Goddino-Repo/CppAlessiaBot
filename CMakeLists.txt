@@ -3,4 +3,4 @@ project(CppAlessiaBot)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(CppAlessiaBot main.cpp)
+add_executable(CppAlessiaBot main.cpp stringUtils.cpp stringUtils.h emoji.cpp emoji.h)
