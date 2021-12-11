@@ -5,3 +5,4 @@
 #include "emoji.h"
 
 std::string emoji::heart = "\u2764";
+std::string emoji::copyright = "\u00A9";

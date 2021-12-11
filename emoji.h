@@ -8,7 +8,8 @@
 
 class emoji {
 public:
-	[[maybe_unused]] static std::string heart;
+	static std::string heart;
+	static std::string copyright;
 };
 
 
