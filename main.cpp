@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <string>
 #include <ctime>
+#include <cpr/cpr.h>
 #include "stringUtils.h"
 #include "emoji.h"
 #include "constants.h"
@@ -40,8 +41,12 @@ int main() {
 			cout << emoji::robot + ") €" + stringUtils::lowercase(botName) + "Bot - " + botName + " classic commands";
 			cout << stringUtils::emptyLines(2);
 			cout << emoji::robot + ") €teenyBot - TeenyBot mode commands" << stringUtils::emptyLines(2);
-			cout << emoji::sosSignal + ") /covid - Check news about coronavirus in italy";
-		} else
+			cout << emoji::sosSignal + ") /covid - Check news about coronavirus in italy" + stringUtils::emptyLines(2);
+		} else if(botCommand(command, "/covid")) {
+			cpr::Response r = cpr::Get(cpr::Url{"https://api.covid19api.com/summary"});
+			cout << r.text << endl;
+		}
+		else
 			cout << "This is not my command" << stringUtils::emptyLines(2);
 	}
 }
